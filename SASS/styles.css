@@ -1,0 +1,98 @@
+.article_main_section {
+  background-color: #C0C5C1;
+  padding-bottom: 2rem;
+}
+
+.about__title {
+  color: #443850;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.about, .goals {
+  background-color: #EAF0CE;
+  border-radius: 1rem;
+  -webkit-box-shadow: 5px 5px 5px #443850;
+          box-shadow: 5px 5px 5px #443850;
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 60%;
+      grid-template-columns: 30% 60%;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+  margin: 2rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .about, .goals {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.experience, .values {
+  background-color: #EAF0CE;
+  border-radius: 1rem;
+  -webkit-box-shadow: 5px 5px 5px #443850;
+          box-shadow: 5px 5px 5px #443850;
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 30%;
+      grid-template-columns: 60% 30%;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .experience, .values {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.about_description, .goals_description {
+  margin-left: 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .about_description, .goals_description {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+}
+
+.experience_description, .values_description {
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .experience_description, .values_description {
+    margin-top: 1rem;
+  }
+}
+
+.about_description__title, .experience_description__title, .goals_description__title, .values_description__title {
+  text-align: left;
+}
+
+@media only screen and (max-width: 992px) {
+  img {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

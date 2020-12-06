@@ -1,0 +1,470 @@
+
+:root{
+--first: #BBBE64;
+--second: #EAF0CE;
+--third: #C0C5C1;
+--fourth: #7D8491;
+--fifth: #443850;
+}
+*{margin:0;
+
+    padding:0;
+    
+    box-sizing: border-box;}
+
+
+body{
+    font-family: "Raleway", Arial, Helvetica, sans-serif !important;
+}
+/* para alinear y centrar el contenido de la pagina */
+.containerMargin{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+/* estilo del header */
+
+
+.companyName{
+    color: var(--fifth);
+    font-weight: bolder;
+    width: 30%;
+    text-transform: uppercase;
+    font-size: xx-large;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+
+
+.headerMenu{
+    
+    text-align: center;
+    text-transform: uppercase;
+    list-style: none !important;
+    font-weight: bold;
+    margin-bottom: 0 !important;
+
+}
+
+li{
+    display: inline-block;
+    padding-left: 1rem;
+}
+a{
+    text-decoration: none !important;
+    
+    
+}
+.headerMenu a{
+    color: var(--fifth);
+}
+.headerMenu a:hover{
+    color: var(--fifth);
+}
+
+
+
+.flexHeader{
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.presentation{
+    
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/presentacion.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+    
+    
+}
+
+.presentation h2{
+    
+    text-shadow: 2px 0 2px var(--fifth);
+    padding-top: 15rem ;
+    text-align: center;
+    color: var(--second);
+    font-size: 50px;
+    font-style: italic;
+    letter-spacing: 0.1em;
+    animation-duration: 2s;
+    animation-name: appear;
+    font-weight: bolder;
+        
+}
+
+
+@keyframes appear {
+    0% { opacity: 0;}
+    100% {opacity: 1;}
+}
+.button{
+    display: block;
+    width: 10rem;
+    border: var(--fifth) 1px solid;
+    text-transform: uppercase;
+    color: var(--fifth);
+    text-align: center;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 5px;
+    margin-top: 5px;
+    
+}
+.presentation .button{
+    
+    display: block;
+    margin: 7rem auto;
+    bottom: 10rem;
+    
+    border: var(--second) 1.5px solid;
+    color: var(--second);
+    transition: all 0.3s;
+    
+}
+.presentation .button:hover{
+    background-color: var(--second);
+    color: var(--fifth) !important;
+    
+    
+}
+
+article {
+    margin-bottom: 1rem;
+}
+
+article img{
+    width: 100%;
+    height: 200px;
+}
+article p{
+    text-align: left;
+}
+.services{
+    
+    padding: 1rem;
+    background-color: whitesmoke;
+}
+
+.services .button {
+    transition: all 0.5s;
+}
+
+.services .button:hover{
+    background-color: var(--second);
+    color: var(--fifth);
+}
+
+.carousel {
+    margin-bottom: 1rem !important;
+}
+
+section h3{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+
+
+.contact{
+    width: 100%;
+    background-color: var(--third);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 0;
+}
+.messageFlex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 50%;
+    
+}
+.messageFlex input, textarea{
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding: 0.3rem;
+}
+
+
+#submit{
+    letter-spacing: 0.2em; 
+    color: var(--fifth);
+    
+}
+#submit:hover{
+   
+    color: var(--fifth);
+}
+
+
+
+
+footer{
+    padding: 1rem 0 !important;
+    
+    background-color: var(--fifth);
+}
+footer h4{
+    
+    font-size: large;
+   color: var(--second);
+   font-weight: normal !important;
+   
+}
+footer ul{
+    margin-bottom: 0 !important;
+}
+.footerDisplay{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+footer a{
+    color: var(--first);
+}
+footer a:hover{
+    color: var(--second);
+}
+
+/* gallery */
+.carousel-item img {
+    max-height: 85vh;
+}
+
+.gallery{
+    background-color: var(--third);
+    
+    
+}
+.galleryGrid{
+    
+    display: grid;
+    
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    grid-template-areas: 
+     "palmera palmera flores"
+     "palmera palmera escalera"
+     "luces madera madera"
+     "camino madera madera"
+     "puente puente maceta"
+     "puente puente silla";
+     
+
+}
+.flores {
+    grid-area: flores;
+}
+.palmera {
+    grid-area: palmera;
+}
+.madera {
+    grid-area: madera;
+}
+.escalera {
+    grid-area: escalera;
+}
+.luces {
+    grid-area: luces;
+}
+.puente {
+    grid-area: puente;
+}
+.silla {
+    grid-area: silla;
+}
+.camino{
+    grid-area: camino;
+}
+.maceta {
+    grid-area: maceta;
+}
+
+.galleryGrid a img{
+    width: 100%;
+    height: 100%;
+    
+}
+.galleryGrid a {
+    align-items: center;
+    justify-items: center;
+}
+
+.gallery{
+    padding-bottom: 5px;
+}
+
+
+
+
+.modalBackground{
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+.modalBackground img{
+    
+    height: 100%;
+}
+.modalBackground h4{
+    padding: 1rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color:var(--first);
+}
+.gallery a:hover {
+    opacity: 0.7;
+}
+
+#image1:target, #image2:target, #image3:target,
+#image4:target, #image5:target, #image6:target,
+#image6:target, #image7:target, #image8:target,
+#image9:target{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+
+/*get a quote*/
+.quoteSection{
+    
+    padding: 1rem 0;
+    background-color: var(--third);
+}
+.quoteFlex h2{
+    width: 100%;
+    text-align: center;
+}
+
+.quoteFlex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.formFlex{
+    display: flex;
+    flex-direction: column;
+}
+.personalInformation{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+.personalInformation input{
+    padding: 0.5rem 0;
+    margin: 1rem;
+}
+
+.spaceForm{
+    margin-top: 1rem;
+}
+
+/* services */
+.serviceDisplay {
+    display: flex;
+    flex-direction: column;
+}
+.general {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "imagen parrafo parrafo";
+    grid-column-gap: 10px;
+}
+.general .generalDescription{
+    grid-area: parrafo;
+}
+.general img{
+    grid-area: imagen;
+    max-height: 20rem;
+}
+.design {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "parrafo parrafo imagen";
+    grid-column-gap: 10px;
+}
+.design .designDescription{
+    grid-area: parrafo;
+}
+.design img{
+    grid-area: imagen;
+    max-height: 20rem;
+}
+.pool {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "imagen parrafo parrafo";
+    grid-column-gap: 10px;
+}
+.pool .poolDescription{
+    grid-area: parrafo;
+}
+.pool img{
+    grid-area: imagen;
+    max-height: 20rem;
+}
+
+.general, .pool, .design {
+    background-color: var(--second);
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px var(--fifth);
+    padding: 1rem;
+}
+
+.serviceDisplay article{
+    padding-bottom: 1rem;
+}
+
+.servicesPage {
+    padding-top: 1rem;
+    background-color: var(--third);
+}
+@media only screen and (max-width: 992px){
+.row .contactForm {
+    margin-top: 1rem;
+}
+.flexHeader {
+    display: flex;
+    flex-direction: column;
+
+}
+nav {
+    display: block;
+}
+.presentation h2{
+    font-size: 2rem;
+    
+}
+.presentation .button{
+    display: none;
+}
+.footerDisplay{
+    flex-direction: column-reverse;
+    
+}
+}

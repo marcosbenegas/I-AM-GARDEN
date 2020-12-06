@@ -1,0 +1,59 @@
+.article_main_section{
+    background-color: $third;
+    padding-bottom: 2rem;
+}
+.about__title{
+        color: $fifth;
+        font-family: $font_first;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        padding-top: 1rem;
+    }
+.about, .goals{
+    @extend %about_box;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+    @media only screen and (max-width:992px) {
+        display: flex;
+        flex-direction: column;
+    }
+    margin: 2rem;
+}
+.experience, .values{
+    @extend %about_box;
+    display: grid;
+    grid-template-columns: 60% 30%;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+    @media only screen and (max-width:992px) {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+.about_description, .goals_description {
+    margin-left: 1rem;
+    @media only screen and (max-width:992px){
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+}
+.experience_description, .values_description{
+    margin-right: 1rem;
+    @media only screen and (max-width:992px){
+        margin-top: 1rem;
+    }
+}
+.about_description__title, .experience_description__title, .goals_description__title, .values_description__title{
+    text-align: left;
+}
+img{
+@media only screen and (max-width:992px){
+    display: none;
+}
+}
+
