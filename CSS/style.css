@@ -164,6 +164,7 @@ article p{
     color: var(--fifth);
 }
 
+
 .carousel {
     margin-bottom: 1rem !important;
 }
@@ -444,17 +445,47 @@ footer a:hover{
     padding-top: 1rem;
     background-color: var(--third);
 }
-@media only screen and (max-width: 992px){
+.servicesPage article p{
+    padding-top: 1rem;
+    
+    }
+    .servicesPage article a{
+        margin-top: 2rem;
+        
+        }
+    
+    .servicesPage .button:hover{
+            background-color: var(--fifth);
+            color: var(--first);
+        }
+
+.icon {display: none;}
+
+@media only screen and (min-width: 721px) and (max-width: 900px){
+    .flexHeader {
+        flex-direction: column;
+               
+    }
+    .presentation div .button{
+        display: none;
+    }
+}
+@media only screen and (max-width: 720px){
 .row .contactForm {
     margin-top: 1rem;
 }
-.flexHeader {
-    display: flex;
-    flex-direction: column;
-
+header .companyName{
+    margin-right: 3rem;
 }
+
 nav {
-    display: block;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #7D8491;
 }
 .presentation h2{
     font-size: 2rem;
@@ -466,5 +497,31 @@ nav {
 .footerDisplay{
     flex-direction: column-reverse;
     
+}
+.icon {
+    display: block;
+    max-height: 4rem;
+}
+.close {
+    position: absolute;
+    left: 2rem;
+    top: 2rem
+}
+header nav ul{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+header nav ul a {
+    font-size: 2rem;
+    
+    
+}
+#navMobile:target {
+    display: block;
 }
 }
